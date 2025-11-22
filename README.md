@@ -22,30 +22,6 @@
         }
 ```
 
-# Project 2: Code snippet library
-
-## Schema
-
-```mermaid
-    erDiagram
-        SNIPPET ||--|{ TAG : has
-        SNIPPET }o--|| LANGUAGE : is
-        SNIPPET {
-            string id
-            string code
-            string title
-            string description
-        }
-        TAG {
-            string id
-            string name
-        }
-        LANGUAGE {
-            string id
-            string name
-        }
-```
-
 ## Api Endpoints
 
 ### Get all snippets
@@ -145,7 +121,7 @@
     npm run start
 ```
 
-environment variables:
+## Environment variables:
 
 ```dotenv
 MONGO_DB_URI=<your_mongo_db_url>
